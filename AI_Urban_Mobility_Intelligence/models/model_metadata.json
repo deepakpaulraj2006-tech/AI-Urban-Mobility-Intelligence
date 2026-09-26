@@ -1,0 +1,114 @@
+{
+  "selected_model": "Logistic Regression",
+  "features": [
+    "location",
+    "road_type",
+    "road_capacity",
+    "vehicle_count",
+    "average_speed",
+    "traffic_density",
+    "occupancy_rate",
+    "weather_condition",
+    "day_of_week",
+    "temperature",
+    "rainfall",
+    "visibility",
+    "accident_count",
+    "hour"
+  ],
+  "target": "congestion_level",
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.837,
+      "precision": 0.8392108689739942,
+      "recall": 0.837,
+      "f1": 0.8376995979571316,
+      "confusion_matrix": [
+        [
+          1348,
+          152,
+          0
+        ],
+        [
+          159,
+          676,
+          65
+        ],
+        [
+          0,
+          113,
+          487
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.818,
+      "precision": 0.8188871204484764,
+      "recall": 0.818,
+      "f1": 0.8178734525113011,
+      "confusion_matrix": [
+        [
+          1348,
+          152,
+          0
+        ],
+        [
+          196,
+          635,
+          69
+        ],
+        [
+          1,
+          128,
+          471
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.8346666666666667,
+      "precision": 0.8367638585252598,
+      "recall": 0.8346666666666667,
+      "f1": 0.8350176007329959,
+      "confusion_matrix": [
+        [
+          1359,
+          141,
+          0
+        ],
+        [
+          171,
+          670,
+          59
+        ],
+        [
+          0,
+          125,
+          475
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "location": 0.0018459674856319275,
+    "road_type": 0.003087714167259984,
+    "road_capacity": 0.0076515478596815845,
+    "vehicle_count": 0.12122011969074224,
+    "average_speed": 0.021692572525500536,
+    "traffic_density": 0.3513851385078097,
+    "occupancy_rate": 0.001276495939354268,
+    "weather_condition": 0.0003999018568849137,
+    "day_of_week": 0.005148902121977754,
+    "temperature": 0.0003369868542770771,
+    "rainfall": 0.06089387185631686,
+    "visibility": 0.0003651541484230858,
+    "accident_count": 0.0016268712952618818,
+    "hour": 0.0010591146671343383
+  },
+  "selection_rule": "Highest weighted F1; accuracy used as secondary criterion.",
+  "random_state": 42
+}

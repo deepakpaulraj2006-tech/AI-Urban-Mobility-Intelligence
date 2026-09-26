@@ -1,0 +1,2 @@
+# Methodology
+The project generates reproducible simulated traffic records, cleans them, engineers traffic indicators, performs EDA, computes a project-defined hotspot score, compares three multiclass classifiers and deploys the selected model in an interactive dashboard. Synthetic-data and hotspot-score limitations must be disclosed during presentation.

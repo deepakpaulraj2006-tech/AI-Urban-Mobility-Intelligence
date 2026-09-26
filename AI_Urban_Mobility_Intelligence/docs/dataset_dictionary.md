@@ -1,0 +1,2 @@
+# Dataset Dictionary
+See the CSV headers. Core fields include temporal attributes, simulated location coordinates, road capacity, vehicle count, speed, density, occupancy, weather, rainfall, visibility, accidents and congestion level.
