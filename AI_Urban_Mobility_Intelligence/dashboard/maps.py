@@ -12,8 +12,7 @@ def traffic_map(df, scores):
         m = folium.Map(
             location=[9.9252, 78.1198],
             zoom_start=12,
-            tiles="CartoDB positron"
-        )
+            tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"        )
         folium.Marker(
             [9.9252, 78.1198],
             popup="No valid location data available"
@@ -27,8 +26,7 @@ def traffic_map(df, scores):
             map_df["longitude"].mean()
         ],
         zoom_start=12,
-        tiles="CartoDB positron"
-    )
+        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"    )
 
     # Risk lookup
     lookup = dict(
